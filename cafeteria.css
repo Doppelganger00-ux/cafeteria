@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Bodoni Moda", serif;
+  background-color: #fffefb;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: white;
+  box-shadow: #000 2px 2px 8px;
+}
+
+header img {
+  width: 87px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 45px;
+  box-shadow: #000 2px 2px 8px;
+  transition: transform 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #000;
+  font-size: 25px;
+  padding: 10px 15px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: rgb(122, 90, 1);
+}
+
+.welcome {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('cafe.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center; 
+}
+
+.welcome h1 {
+  font-size: 5rem;
+  margin-bottom: 1px;
+  text-align: left;
+}
+
+.welcome p {
+  font-size: 2rem;
+  max-width: 700px;
+  text-align: left;
+}
+
+.menu-especial,
+.about {
+  text-align: center;
+  padding: 60px 15px;
+  background-color: #fffefb;
+  max-width: 100%;
+}
+
+.menu-especial h2,
+.about h2 {
+  background: #3a2d01;
+  color: white;
+  font-size: 3rem;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.menu-especial img,
+.about img {
+  width: 400px;
+  height: 300px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin: 40px auto 30px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.menu-especial img:hover,
+.about img:hover {
+  transform: scale(1.05);
+}
+
+.texto-menu,
+.texto-about {
+  background: #3a2d01;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 0 auto;
+}
+
+.texto-menu p,
+.texto-about p {
+  font-size: 2.3rem;
+  margin: 0 0 20px;
+}
+
+.texto-menu a,
+.texto-about a {
+  color: #ffffff;
+  font-size: 2rem;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.texto-menu a:hover,
+.texto-about a:hover {
+  color: rgb(171, 126, 3);
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #3a2d01;
+  margin-top: 80px;
+  color: white;
+}
+
+footer a {
+  color: #ffffff;
+  margin: 0 30px;
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: rgb(171, 126, 3);
+}
+
+footer p {
+  margin: 10px 0 0;
+  font-size: 1.3rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header nav ul {
+    gap: 12px;
+  }
+
+  header nav a {
+    font-size: 20px;
+    padding: 8px 12px;
+  }
+
+  .welcome h1 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+
+  .welcome p {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .menu-especial h2,
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .menu-especial img,
+  .about img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .texto-menu p,
+  .texto-about p {
+    font-size: 1.6rem;
+  }
+
+  .texto-menu a,
+  .texto-about a {
+    font-size: 1.4rem;
+  }
+
+  footer a {
+    font-size: 1.4rem;
+    margin: 0 15px;
+  }
+}
